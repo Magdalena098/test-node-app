@@ -1,10 +1,12 @@
 extends layout
 
 block content
- h1#results results of our api should be here plus and input field
+ h1#results
+ input#city(type="search", placeholder="username", name="username")
+ input#inputUserEmail(type="text", placeholder="useremail", name="useremail")
+ button#btnSubmit(type="submit", value="submit")
 
-
-  script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
-   script(src="/javascripts/main.js")
+ script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+ script(src="/javascripts/main.js")
 
  
