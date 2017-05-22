@@ -19,7 +19,7 @@ app.get('/searching', function(req, res){
 
   var val = req.query.city;
 
-  var url = 'https://data.gov.uk/data/api/service/health/clinics?city=' + val;
+  const url = 'https://data.gov.uk/data/api/service/health/clinics?city=' + val;
   console.log(url);
 
 request(url, function(err, resp, body) {
